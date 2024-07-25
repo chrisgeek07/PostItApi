@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_secure_password
   before_create :generate_token
   has_many :posts, dependent: :destroy
 

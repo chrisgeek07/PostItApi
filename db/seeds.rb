@@ -9,6 +9,7 @@
 #
 #
 puts "Deleting all users"
+Post.destroy_all
 User.destroy_all
 puts "All users have been deleted"
 

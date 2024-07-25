@@ -41,7 +41,7 @@ class Api::V1::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:content, :user_id)
+    params.require(:post).permit(:post, :user_id)
   end
 
   def find_post

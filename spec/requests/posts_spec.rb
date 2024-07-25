@@ -15,6 +15,7 @@ RSpec.describe "Posts API", type: :request do
     it "creates a new post" do
       post_params = { post: { content: "New post", user_id: user.id } }
       post "/api/v1/users/#{user.id}/posts", params: post_params, headers: headers
+      puts response.body if response.status == 422
       expect(response).to have_http_status(:created)
     end
   end
