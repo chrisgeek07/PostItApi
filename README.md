@@ -50,3 +50,5 @@ All API requests require an Authorization header with a valid token:
 # Testing
 Run tests with: 
 ```bundle exec rspec```
+
+

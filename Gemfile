@@ -14,7 +14,7 @@ gem "puma", "~> 5.0"
 
 gem 'rspec-rails', group: [:development, :test]
 
-gem 'bcrypt'
+gem 'bcrypt', '~> 3.1.7'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"

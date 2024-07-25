@@ -184,7 +184,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  bcrypt
+  bcrypt (~> 3.1.7)
   bootsnap
   debug
   pg (~> 1.1)
