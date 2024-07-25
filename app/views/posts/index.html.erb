@@ -1,1 +1,13 @@
-<%= render @posts %>
+<h1>All Posts</h1>
+
+<%= link_to 'New Post', new_post_path %>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.content %> by <%= post.user.username %>
+      <%= link_to 'Edit', edit_post_path(post) %> |
+      <%= link_to 'Delete', post_path(post), method: :delete %>
+    </li>
+  <% end %>
+</ul>
